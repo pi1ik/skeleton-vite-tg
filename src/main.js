@@ -6,7 +6,7 @@ import addButton from "./utils/Button.js";
 
 const tg = window.Telegram.WebApp;
 tg.ready();
-tg.expand();
+tg.requestFullscreen();
 
 kaplay({
   width: window.innerWidth,
@@ -472,3 +472,4 @@ for (const key in scenes) {
 }
 
 go("startScreen");
+
