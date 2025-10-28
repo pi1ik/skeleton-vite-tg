@@ -5,8 +5,12 @@ import { Knight } from "./entities/Knight.js";
 import addButton from "./utils/Button.js";
 
 const tg = window.Telegram.WebApp;
-tg.ready();
-tg.requestFullscreen();
+await tg.ready();
+await tg.expand();
+
+document.body.style.margin = "0";
+document.body.style.width = "100vw";
+document.body.style.height = "100vh";
 
 kaplay({
   width: window.innerWidth,
@@ -472,4 +476,5 @@ for (const key in scenes) {
 }
 
 go("startScreen");
+
 
