@@ -5,8 +5,9 @@ import { Knight } from "./entities/Knight.js";
 import addButton from "./utils/Button.js";
 
 const tg = window.Telegram.WebApp;
-await tg.ready();
-await tg.expand();
+
+tg.ready();
+tg.expand();
 
 document.body.style.margin = "0";
 document.body.style.width = "100vw";
@@ -476,5 +477,6 @@ for (const key in scenes) {
 }
 
 go("startScreen");
+
 
 
